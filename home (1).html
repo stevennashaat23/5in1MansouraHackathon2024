@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلايدر تسجيل الدخول</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slide" id="login-slide">
+            <h2>تسجيل الدخول</h2>
+            <form id="login-form">
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" required>
+            </form>
+        </div>
+        <div class="slide" id="register-slide">
+            <h2>الخصائص</h2>
+            <form id="register-form">
+                <label for="new-username">السن :</label>
+                <input type="text" id="new-username" name="username" required>
+                <label for="new-password">فصيله الدم  :</label>
+                <input type="password" id="new-password" name="password" required>
+                <label for="new-password"> المحافظه  :</label>
+                <input type="password" id="new-password" name="password" required>
+
+                <button type="submit">تسجيل</button>
+            </form>
+        </div>
+        <div class="slider-controls">
+            <button onclick="switchSlide('login')">تسجيل الدخول</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
